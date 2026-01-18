@@ -27,7 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                     />
                 )}
                 {product.badge && (
-                    <div className="absolute top-4 left-4 z-10 px-3 py-1 bg-brand text-white text-[10px] font-black uppercase tracking-widest rounded-full">
+                    <div className="absolute top-4 left-4 z-10 px-3 py-1 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full">
                         {product.badge}
                     </div>
                 )}
@@ -40,7 +40,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                     <span className="text-lg font-black text-white">{product.price.toFixed(2)}€</span>
                 </div>
                 <Link href={`/producto/${product.slug}`} className="mt-1 block">
-                    <h3 className="text-xl font-bold text-white group-hover:text-brand transition-colors line-clamp-1">
+                    <h3 className="text-xl font-bold text-white transition-colors line-clamp-1">
                         {product.name}
                     </h3>
                 </Link>

@@ -22,7 +22,7 @@ export default function FundasPage({
                 <aside className="w-full md:w-64 shrink-0">
                     <div className="sticky top-28 glass p-8 rounded-[32px]">
                         <div className="flex items-center gap-2 mb-8 md:mb-10">
-                            <SlidersHorizontal className="h-4 w-4 text-brand" />
+                            <SlidersHorizontal className="h-4 w-4 text-white" />
                             <span className="text-[10px] font-black uppercase tracking-widest text-white">Filters</span>
                         </div>
                         <Suspense fallback={<div className="text-[10px] text-gray-500 uppercase tracking-widest">Loading...</div>}>

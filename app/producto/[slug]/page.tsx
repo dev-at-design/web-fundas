@@ -14,7 +14,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
 
     return (
         <div className="container mx-auto px-4 py-16 md:px-12">
-            <Link href="/fundas" className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-brand mb-12 transition-all">
+            <Link href="/fundas" className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-gray-500 hover:text-white mb-12 transition-all">
                 <ArrowLeft className="h-4 w-4" /> Back to Catalog
             </Link>
 
@@ -31,7 +31,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     </div>
                     <div className="grid grid-cols-4 gap-4">
                         {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="aspect-square rounded-2xl glass cursor-pointer border-white/5 hover:border-brand transition-all opacity-50 hover:opacity-100 overflow-hidden relative">
+                            <div key={i} className="aspect-square rounded-2xl glass cursor-pointer border-white/5 hover:border-white transition-all opacity-50 hover:opacity-100 overflow-hidden relative">
                                 <Image src={product.image} alt={product.name} fill className="object-cover" />
                             </div>
                         ))}
@@ -41,7 +41,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                 {/* Product Info */}
                 <div className="flex flex-col pt-4 text-left">
                     <div className="flex items-center gap-4 mb-4">
-                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-brand bg-brand/10 px-3 py-1 rounded-full">
+                        <span className="text-[10px] font-black uppercase tracking-[0.2em] text-white bg-white/10 px-3 py-1 rounded-full">
                             {product.category}
                         </span>
                         {product.badge && (
@@ -56,7 +56,7 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     </h1>
 
                     <div className="mt-6 flex items-center gap-4">
-                        <div className="flex items-center text-brand">
+                        <div className="flex items-center text-white">
                             {[1, 2, 3, 4, 5].map((s) => <Star key={s} className="h-4 w-4 fill-current" />)}
                         </div>
                         <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">12 Reviews</span>
@@ -77,24 +77,32 @@ export default function ProductPage({ params }: { params: { slug: string } }) {
                     </div>
 
                     <div className="mt-12 flex flex-col gap-4">
-                        <Button className="w-full py-6 text-xs gap-3" variant="primary">
+                        <Button
+                            className="w-full py-6 text-xs gap-3"
+                            variant="primary"
+                            onClick={() => alert("Función 'Añadir al carrito' no implementada en esta demostración.")}
+                        >
                             <ShoppingCart className="h-5 w-5" /> Add to Cart
                         </Button>
-                        <Button className="w-full py-4 text-xs" variant="outline">
+                        <Button
+                            className="w-full py-4 text-xs"
+                            variant="outline"
+                            onClick={() => alert("Función 'Comprar ahora' no implementada en esta demostración.")}
+                        >
                             Buy Now
                         </Button>
                     </div>
 
                     <div className="mt-12 grid grid-cols-1 gap-6 border-t border-white/10 pt-12 sm:grid-cols-2">
                         <div className="flex items-start gap-4 p-5 rounded-3xl bg-white/[0.02] border border-white/5">
-                            <Truck className="h-5 w-5 text-brand mt-1" />
+                            <Truck className="h-5 w-5 text-white mt-1" />
                             <div>
                                 <p className="text-[10px] font-black uppercase tracking-widest text-white">Express Delivery</p>
                                 <p className="text-[10px] text-gray-500 mt-1">24/48h Worldwide Shipping</p>
                             </div>
                         </div>
                         <div className="flex items-start gap-4 p-5 rounded-3xl bg-white/[0.02] border border-white/5">
-                            <ShieldCheck className="h-5 w-5 text-accent mt-1" />
+                            <ShieldCheck className="h-5 w-5 text-white mt-1" />
                             <div>
                                 <p className="text-[10px] font-black uppercase tracking-widest text-white">Lifetime Warranty</p>
                                 <p className="text-[10px] text-gray-500 mt-1">Guaranteed against any defects</p>
