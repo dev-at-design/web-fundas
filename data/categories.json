@@ -1,0 +1,17 @@
+[
+    {
+        "id": "premium",
+        "name": "Featured",
+        "slug": "premium"
+    },
+    {
+        "id": "cyber",
+        "name": "Cyber Series",
+        "slug": "cyber"
+    },
+    {
+        "id": "minimal",
+        "name": "Essential",
+        "slug": "minimal"
+    }
+]
