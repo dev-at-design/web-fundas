@@ -1,17 +1,17 @@
 [
     {
-        "id": "premium",
-        "name": "Featured",
-        "slug": "premium"
+        "id": "pure",
+        "name": "Pure",
+        "slug": "pure"
     },
     {
-        "id": "cyber",
-        "name": "Cyber Series",
-        "slug": "cyber"
-    },
-    {
-        "id": "minimal",
+        "id": "essential",
         "name": "Essential",
-        "slug": "minimal"
+        "slug": "essential"
+    },
+    {
+        "id": "refined",
+        "name": "Refined",
+        "slug": "refined"
     }
 ]

@@ -92,9 +92,9 @@ const Phone360Animation: React.FC<Phone360AnimationProps> = ({
         <div className={`relative w-full h-full overflow-hidden ${className}`}>
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center z-20 bg-black">
-                    <div className="flex flex-col items-center gap-4">
-                        <div className="w-12 h-12 border-4 border-white border-t-transparent rounded-full animate-spin shadow-[0_0_20px_rgba(255,255,255,0.2)]" />
-                        <span className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-500">Loading Experience</span>
+                    <div className="flex flex-col items-center gap-6">
+                        <div className="w-10 h-10 border-2 border-white/20 border-t-white/80 rounded-full animate-spin" />
+                        <span className="text-xs font-semibold uppercase tracking-widest text-white/40">Loading Experience</span>
                     </div>
                 </div>
             )}

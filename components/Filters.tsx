@@ -21,13 +21,13 @@ export default function Filters() {
     };
 
     return (
-        <div className="flex flex-col gap-10">
-            <div className="text-left">
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-6">Collections</h3>
-                <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-12">
+            <div>
+                <h3 className="text-xs font-semibold text-white/50 mb-6 tracking-tight">Collections</h3>
+                <div className="flex flex-col gap-4">
                     <button
                         onClick={() => handleFilter("all")}
-                        className={`text-left text-[10px] uppercase font-bold tracking-widest transition-all hover:text-white ${currentCategory === "all" ? "text-white underline underline-offset-4" : "text-gray-400"}`}
+                        className={`text-left text-sm font-medium transition-all hover:text-white ${currentCategory === "all" ? "text-white" : "text-gray-500"}`}
                     >
                         All Items
                     </button>
@@ -35,7 +35,7 @@ export default function Filters() {
                         <button
                             key={cat.id}
                             onClick={() => handleFilter(cat.slug)}
-                            className={`text-left text-[10px] uppercase font-bold tracking-widest transition-all hover:text-white ${currentCategory === cat.slug ? "text-white underline underline-offset-4" : "text-gray-400"}`}
+                            className={`text-left text-sm font-medium transition-all hover:text-white ${currentCategory === cat.slug ? "text-white" : "text-gray-500"}`}
                         >
                             {cat.name}
                         </button>
@@ -43,19 +43,19 @@ export default function Filters() {
                 </div>
             </div>
 
-            <div className="text-left">
-                <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-6">Price Range</h3>
-                <div className="flex flex-col gap-4">
-                    <label className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-400 cursor-pointer group hover:text-white transition-colors">
-                        <input type="checkbox" className="h-4 w-4 rounded border-white/10 bg-white/5 text-white accent-white focus:ring-white focus:ring-offset-0 ring-offset-background" />
+            <div>
+                <h3 className="text-xs font-semibold text-white/50 mb-6 tracking-tight">Price Range</h3>
+                <div className="flex flex-col gap-5">
+                    <label className="flex items-center gap-3.5 text-sm font-medium text-gray-500 cursor-pointer group hover:text-white transition-colors">
+                        <input type="checkbox" className="h-[18px] w-[18px] rounded-md border-white/10 bg-white/5 text-white accent-white focus:ring-white/20 focus:ring-offset-0 ring-offset-background" />
                         0€ - 25€
                     </label>
-                    <label className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-400 cursor-pointer group hover:text-white transition-colors">
-                        <input type="checkbox" className="h-4 w-4 rounded border-white/10 bg-white/5 text-brand focus:ring-brand focus:ring-offset-0 ring-offset-background" />
+                    <label className="flex items-center gap-3.5 text-sm font-medium text-gray-500 cursor-pointer group hover:text-white transition-colors">
+                        <input type="checkbox" className="h-[18px] w-[18px] rounded-md border-white/10 bg-white/5 text-white accent-white focus:ring-white/20 focus:ring-offset-0 ring-offset-background" />
                         25€ - 50€
                     </label>
-                    <label className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-400 cursor-pointer group hover:text-white transition-colors">
-                        <input type="checkbox" className="h-4 w-4 rounded border-white/10 bg-white/5 text-brand focus:ring-brand focus:ring-offset-0 ring-offset-background" />
+                    <label className="flex items-center gap-3.5 text-sm font-medium text-gray-500 cursor-pointer group hover:text-white transition-colors">
+                        <input type="checkbox" className="h-[18px] w-[18px] rounded-md border-white/10 bg-white/5 text-white accent-white focus:ring-white/20 focus:ring-offset-0 ring-offset-background" />
                         Extra Premium
                     </label>
                 </div>

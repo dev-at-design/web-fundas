@@ -1,51 +1,60 @@
 [
   {
     "id": 1,
-    "name": "The Onyx",
-    "slug": "the-onyx",
+    "name": "Minimal Form",
+    "slug": "minimal-form",
     "price": 45.00,
-    "category": "Premium",
-    "image": "/lajoia_case_onyx_1768754160860.png",
-    "description": "Carbon Fiber Finish with gold accents. Military-grade protection for the modern aesthetic.",
-    "badge": "Best Seller"
+    "category": "Pure",
+    "image": "/minimal_case_silhouette_1_1768766996532.png",
+    "description": "Essential protection. Pure geometric form with clean lines.",
+    "badge": "Signature"
   },
   {
     "id": 2,
-    "name": "Neon Cyber",
-    "slug": "neon-cyber",
+    "name": "Outline Essence",
+    "slug": "outline-essence",
     "price": 50.00,
-    "category": "Cyber",
-    "image": "/lajoia_case_neon_cyber_1768754175071.png",
-    "description": "Glow in the dark neon lines. Futuristic design with impact-resistant technology.",
+    "category": "Pure",
+    "image": "/minimal_case_silhouette_2_1768767008841.png",
+    "description": "Transparent elegance. Where form meets function.",
     "badge": "New"
   },
   {
     "id": 3,
-    "name": "Matte Frost",
-    "slug": "matte-frost",
+    "name": "Solid White",
+    "slug": "solid-white",
     "price": 45.00,
-    "category": "Minimal",
-    "image": "/lajoia_case_matte_frost_1768754192035.png",
-    "description": "Soft Touch Coating. Clean white aesthetic with ultra-slim profile."
+    "category": "Essential",
+    "image": "/minimal_case_silhouette_3_1768767023422.png",
+    "description": "Timeless simplicity. Clean white aesthetic."
   },
   {
     "id": 4,
-    "name": "Amethyst Pulse",
-    "slug": "amethyst-pulse",
+    "name": "Clear Edge",
+    "slug": "clear-edge",
     "price": 55.00,
-    "category": "Cyber",
-    "image": "/lajoia_case_amethyst_pulse.png",
-    "description": "Deep purple neon curves. Glassmorphism inspired aesthetics with premium protection.",
-    "badge": "Trend"
+    "category": "Refined",
+    "image": "/minimal_case_silhouette_4_1768767035904.png",
+    "description": "Defined boundaries. Minimalist protection redefined.",
+    "badge": "Refined"
   },
   {
     "id": 5,
-    "name": "Emerald Stealth",
-    "slug": "emerald-stealth",
+    "name": "Pure Form",
+    "slug": "pure-form",
     "price": 60.00,
-    "category": "Premium",
-    "image": "/lajoia_case_emerald_stealth.png",
-    "description": "Carbon fiber core with emerald green accents. The ultimate stealth protection.",
-    "badge": "Elite"
+    "category": "Essential",
+    "image": "/minimal_case_silhouette_5_1768767049160.png",
+    "description": "Absolute simplicity. Ultimate minimalism.",
+    "badge": "Core"
+  },
+  {
+    "id": 6,
+    "name": "Double Frame",
+    "slug": "double-frame",
+    "price": 55.00,
+    "category": "Refined",
+    "image": "/minimal_case_silhouette_6_1768767061453.png",
+    "description": "Layered elegance. Geometric precision."
   }
 ]

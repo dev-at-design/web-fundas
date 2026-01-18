@@ -16,35 +16,35 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
     return (
-        <div className="group flex flex-col overflow-hidden rounded-3xl bg-white/5 border border-white/10 transition-all hover:bg-white/[0.08] hover:border-white/20">
+        <div className="group flex flex-col overflow-hidden rounded-[28px] bg-white/[0.03] border border-white/5 transition-all duration-300 hover:bg-white/[0.05] hover:border-white/10">
             <Link href={`/producto/${product.slug}`} className="relative aspect-[4/5] overflow-hidden">
                 {product.image && (
                     <Image
                         src={product.image}
                         alt={product.name}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        className="object-contain p-12 transition-transform duration-500 group-hover:scale-105"
                     />
                 )}
                 {product.badge && (
-                    <div className="absolute top-4 left-4 z-10 px-3 py-1 bg-white text-black text-[10px] font-black uppercase tracking-widest rounded-full">
+                    <div className="absolute top-5 left-5 z-10 px-4 py-1.5 bg-white/95 backdrop-blur-sm text-black text-xs font-medium rounded-full">
                         {product.badge}
                     </div>
                 )}
             </Link>
-            <div className="flex flex-1 flex-col p-6 text-left">
-                <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500">
+            <div className="flex flex-1 flex-col p-8 text-left">
+                <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-medium text-gray-500">
                         {product.category}
                     </span>
-                    <span className="text-lg font-black text-white">{product.price.toFixed(2)}€</span>
+                    <span className="text-lg font-semibold text-white">{product.price.toFixed(2)}€</span>
                 </div>
-                <Link href={`/producto/${product.slug}`} className="mt-1 block">
-                    <h3 className="text-xl font-bold text-white transition-colors line-clamp-1">
+                <Link href={`/producto/${product.slug}`} className="block">
+                    <h3 className="text-xl font-semibold text-white transition-colors group-hover:text-gray-200 line-clamp-1">
                         {product.name}
                     </h3>
                 </Link>
-                <p className="mt-2 line-clamp-2 text-xs text-gray-500 flex-grow">
+                <p className="mt-3 line-clamp-2 text-sm text-gray-500 flex-grow leading-relaxed">
                     {product.description}
                 </p>
             </div>
