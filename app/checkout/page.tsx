@@ -1,6 +1,6 @@
-import Button from "@/components/Button";
-import { CreditCard, Truck, Lock, ShieldCheck, ArrowLeft } from "lucide-react";
+import { CreditCard, Truck, ShieldCheck, ArrowLeft } from "lucide-react";
 import Link from "next/link";
+import CheckoutButton from "@/components/CheckoutButton";
 
 export default function CheckoutPage() {
     return (
@@ -71,9 +71,7 @@ export default function CheckoutPage() {
                             <span>Total</span>
                             <span>0.00€</span>
                         </div>
-                        <Button variant="primary" className="w-full h-14 gap-3 text-base" onClick={() => alert("Pago no procesado. Esta es una demostración.")}>
-                            <Lock className="h-4 w-4" /> Secure Payment
-                        </Button>
+                        <CheckoutButton />
                         <p className="text-[10px] text-gray-500 mt-8 text-center flex items-center justify-center gap-2 font-medium tracking-tight">
                             <ShieldCheck className="h-3.5 w-3.5 text-white/50" /> SSL Encrypted Transaction
                         </p>
